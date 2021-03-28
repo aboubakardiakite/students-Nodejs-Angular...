@@ -1,0 +1,14 @@
+
+  <div id='container'>
+  <ul class="list-group">
+  <app-student-view class="studs"
+  *ngFor="let stud of data"
+  [nom] = "stud.nom"
+  [prenom] = "stud.prenom"
+  [num]="stud.num"
+  
+  ></app-student-view></ul>
+
+
+
+</div>
