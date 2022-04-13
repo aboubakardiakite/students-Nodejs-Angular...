@@ -1,0 +1,32 @@
+<h3> {{status}} </h3>
+
+ <div *ngIf="add" id="form">
+ <form  [formGroup]="addStudForm" (ngSubmit)="addStudent()">
+  <input type="text"  class="fadeIn second" name="nom" placeholder="nom" formControlName = "nom">
+  <input type="text"  class="fadeIn third" name="prenom" placeholder="prenom"formControlName = "prenom">
+  <input type="number"  class="fadeIn fourth" name="num" placeholder="numéro étudiant" formControlName = "num">
+  <input type="submit"  id="addS" class="fadeIn fourth" [disabled] ="addStudForm.invalid" value="Add">
+</form>
+ </div>
+
+<div *ngIf="updated" id="formUp">
+  <form  [formGroup]="upForm" (ngSubmit)="update()">
+   <input type="text" id="nvxNom" class="fadeIn second" name="nom" placeholder={{nomE}} formControlName = "nom">
+   <input type="text" id="nvxPrenom"  class="fadeIn third" name="prenom" placeholder={{prenomE}} formControlName = "prenom">
+   <input type="submit"  id="upF" class="fadeIn fourth" [disabled] ="upForm.invalid" value="update">
+   <button type="button" id="addB" (click)="canAdd()" class="btn btn-success">add</button>
+
+ </form>
+
+
+</div>
+
+
+
+
+  <ul id='container' class="list-group">
+  </ul>
+  
+
+
+

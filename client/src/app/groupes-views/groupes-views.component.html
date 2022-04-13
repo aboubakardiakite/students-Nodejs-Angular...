@@ -1,0 +1,53 @@
+    <div id="groupes" class="container-fluid">
+           
+           
+            <ul class="nav navbar-nav">
+
+                <li>
+                    <button type="button" class="btn btn-fluid" (click)='studentsIn(0)'>aucun groupe</button>
+                </li>
+
+                <li>
+                <button type="button" class="btn btn-fluid" (click)='studentsIn(1)'>groupe 1</button>
+                </li>
+            </ul>
+           <ul class="nav navbar-nav">
+
+                <li>
+                <button type="button" class="btn btn-fluid"(click)='studentsIn(2)'>groupe 2</button>
+                </li>
+            </ul>
+           <ul class="nav navbar-nav">
+
+                <li>
+                <button type="button" class="btn btn-fluid" (click)='studentsIn(3)'>groupe 3 </button>
+                </li>
+            </ul>
+           <ul class="nav navbar-nav">
+
+                <li>
+                <button type="button" class="btn btn-fluid" (click)='studentsIn(4)'>groupe 4</button>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav">
+
+                <li>
+                <button type="button" class="btn btn-fluid" (click)='studentsIn(5)'>groupe 5</button>
+                </li>
+            </ul>
+    </div>
+   <span id="numGroup">{{numGroup}}</span> 
+    <div id="students">
+     <!-- <ul class="list-group">
+            <app-student-view class="studs"
+            *ngFor="let stud of data"
+            [nom] = "stud.name"
+            [prenom] = "stud.first_name"
+            [num]="stud.student_number"
+            [id]="stud._id"
+            
+        ></app-student-view></ul>-->
+       
+ 
+    </div>
+

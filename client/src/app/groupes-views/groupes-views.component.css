@@ -1,0 +1,26 @@
+button{
+    margin-left:100px;
+    margin-bottom: 30px;
+
+    
+}
+
+#groupes{
+    margin: auto;
+
+    border-bottom: 1px solid red ;
+    margin-bottom: 20px;
+}
+button:hover{
+    color: salmon;
+}
+
+#numGroup{
+    margin-left: 550px;
+    margin-bottom: 100px;
+    
+    color: gray;
+    font-size: 30px;
+    font-style: oblique;
+}
+
